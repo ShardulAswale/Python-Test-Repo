@@ -1,11 +1,9 @@
-# version 2
-def hello():
+# version 6
+def hello() -> str:
     return "Hello, world!"
 
-# version 3
-def greet(name):
+def greet(name: str) -> str:
     return f"Hello, {name}!"
 
-# version 5
-def sum(a=2,b=3):
-    return f"Sum is {a+b}"
+def sum_values(a: int = 2, b: int = 3) -> str:
+    return f"Sum is {a + b}"
